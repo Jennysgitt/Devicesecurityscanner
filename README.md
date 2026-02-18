@@ -1,6 +1,6 @@
 # final_year_project
 
-A new flutter project, for final year project.
+A new flutter project, a device verification system for campus.
 
 ## Getting Started
 
