@@ -1,11 +1,3 @@
-// main.dart
-// Entry point of the SecureGate AI mobile application.
-// Responsible for:
-// 1. Initializing local storage and backend services (Supabase)
-// 2. Setting system UI configuration
-// 3. Injecting global dependencies using Provider
-// 4. Configuring centralized routing with role-based access control (GoRouter)
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -28,7 +20,6 @@ import 'screens/scan_screen.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/dev_tools_screen.dart';
-
 
 void main() async {
   // STEP 1: Ensure Flutter binding is initialized
