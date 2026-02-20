@@ -64,8 +64,7 @@ class SupabaseService {
         .maybeSingle();
 
     if (userResponse == null) return null;
-    return UserModel.fromJson(userResponse);
-  }
+    return UserModel.fromJson(userResponse)
 
   // Device Methods
   Future<List<DeviceModel>> getDevices({String? userId}) async {
