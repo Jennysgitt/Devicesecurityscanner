@@ -64,7 +64,8 @@ class SupabaseService {
         .maybeSingle();
 
     if (userResponse == null) return null;
-    return UserModel.fromJson(userResponse)
+    return UserModel.fromJson(userResponse);
+  }
 
   // Device Methods
   Future<List<DeviceModel>> getDevices({String? userId}) async {
@@ -97,6 +98,7 @@ class SupabaseService {
       'image_url': imageUrl,
       'device_id': deviceId,
       'ai_features': features,
+      'status': 'pending',
     }).select().single();
 
     return DeviceModel.fromJson(response);
@@ -204,4 +206,3 @@ class SupabaseService {
     });
   }
 }
-
